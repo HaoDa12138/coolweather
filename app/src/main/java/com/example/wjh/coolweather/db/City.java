@@ -1,13 +1,15 @@
 package com.example.wjh.coolweather.db;
 
+import org.litepal.crud.DataSupport;
+
 /**
  * Created by WJH on 2018/11/17.
  */
 
-public class City {
+public class City extends DataSupport{
     private int id;
     private String cityname;
-    private  String cityCode;
+    private  int cityCode;
     private  int provinceId;
 
     public int getId() {
@@ -26,11 +28,11 @@ public class City {
         this.cityname = cityname;
     }
 
-    public String getCityCode() {
+    public int getCityCode() {
         return cityCode;
     }
 
-    public void setCityCode(String cityCode) {
+    public void setCityCode(int cityCode) {
         this.cityCode = cityCode;
     }
 

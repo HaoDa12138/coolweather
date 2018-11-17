@@ -1,10 +1,12 @@
 package com.example.wjh.coolweather.db;
 
+import org.litepal.crud.DataSupport;
+
 /**
  * Created by WJH on 2018/11/17.
  */
 
-public class County {
+public class County extends DataSupport{
     private int id;
     private String countyName;
     private String weatherId;
